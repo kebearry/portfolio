@@ -51,26 +51,10 @@ export default {
         shot => !excludedShots.includes(shot.id)
       );
       const dribbbleShots = filteredShots.slice(0, 9);
-      console.log(dribbbleShots + 'end of dribble' +myRepositories)
       return { dribbbleShots, myRepositories};
     } catch (err) {
       return { dribbbleShots: [], myRepositories: []};
     }
   },
-  //   async fetchRepoData(){
-  //   try{
-  //     const { data } = await axios.get(
-  //       "https://api.github.com/users/kebearry/repos"
-  //     )
-  //     const filteredShots = data.filter(
-  //       shot => !excludedShots.includes(shot.id)
-  //     );
-  //     const myRepositories = filteredShots.slice(0, 9);
-  //     console.log(myRepositories)
-  //     return { myRepositories };
-  //   } catch (err){
-  //     return { myRepositories: []}
-  //   }
-  // }
 };
 </script>
