@@ -10,6 +10,7 @@
                     <li class="list-inline-item"><a class="linkedin" href="https://www.linkedin.com/in/rebecca965" target="_blank"><icon name="linkedin" width="40" height="40"></icon></a></li>
                     <li class="list-inline-item"><a class="email" id="email" href=""><icon name="envelope" width="40" height="40"></icon></a></li>
                 </ul>
+                <a class="btn btn-primary" href="https://drive.google.com/file/d/1eF8z0n6RpFwqNouiqxQGjBK8w7USZ0Mx/view" target="_blank">I want to take a look at your resume!</a>
             </div>
         </div>
     </section>
@@ -79,7 +80,6 @@ export default {
     }
   }
 }
-
 .pink{
   background: $pink
 }

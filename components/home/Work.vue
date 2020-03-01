@@ -44,7 +44,9 @@
                         </figure>
                     </div>
               </template>
-              <template v-else>Bye</template>
+              <template v-else>                    
+                <div class="col text-center"><p>Looks like there's a problem accessing Github API. Please reload the page.</p></div>
+              </template>
             </div>
             <div class="row">
                 <div class="col pt-6">
@@ -76,12 +78,6 @@ export default {
         default: () => []
       }
   }
-    // {
-    //   myRepositories: {
-    //   type: Array,
-    //   default: []
-    //   }
-    // }
 };
 </script>
 
