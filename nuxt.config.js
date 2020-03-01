@@ -4,7 +4,7 @@ module.exports = {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Portfolio Site for Rebecca, Application Developer' },
+            { hid: 'description', name: 'description', content: 'Portfolio Site for Rebecca, ApplicationDeveloper' },
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -28,17 +28,23 @@ module.exports = {
     ],
 
     build: {
-        extend (config, { isDev }) {
-            if (isDev && process.client) {
-            config.module.rules.push({
-            enforce: 'pre',
-            test: /\.(js|vue)$/,
-            loader: 'eslint-loader',
-            exclude: /(node_modules)/
-            })
+        extend(config, ctx) {
+            if (ctx.dev && ctx.isClient) {
+                config.module.rules.push({
+                    enforce: 'pre',
+                    test: /\.(js|vue)$/,
+                    loader: 'eslint-loader',
+                    exclude: /(node_modules)/,
+                });
             }
+
+            // We are removing the SVGs from URL loader's test property
+            // We'll handle them with svg-sprite-loader.js in plugins folder
+            const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
+            svgRule.test = /\.(png|jpe?g|gif|webp)$/;
         },
-        // vendor: ['axios'],
+
+        vendor: ['axios'],
     },
 
     env: {
