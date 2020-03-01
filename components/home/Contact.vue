@@ -1,5 +1,5 @@
 <template>
-    <section class="contact text-center pt-10 pb-10" id="contact">
+    <section class="contact text-center pt-10 pb-10 pink" id="contact">
         <div class="container">
             <div class="col">
                 <h1 class="mb-5">Get in Touch with Me!</h1>
@@ -78,5 +78,9 @@ export default {
       color: $blue;
     }
   }
+}
+
+.pink{
+  background: $pink
 }
 </style>
