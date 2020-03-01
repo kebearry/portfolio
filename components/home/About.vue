@@ -1,5 +1,5 @@
 <template>
-    <section class="about text-center pt-2 pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
+    <section class="about text-center pt-5 pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-md-8">

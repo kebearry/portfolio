@@ -5,10 +5,6 @@
                 <div class="title">REBECCA TAN</div>
             </a>
 
-            <div class="hamburger-menu ml-auto d-md-none" @click="isMobileMenuOpen = !isMobileMenuOpen">
-                <span></span>
-            </div>
-
             <div class="site-navigation ml-auto">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about" @click="onNavClick">About</a></li>
