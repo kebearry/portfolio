@@ -1,10 +1,10 @@
 module.exports = {
     head: {
-        title: 'Özgür Uysal | Designer & Front End Developer',
+        title: 'Rebecca | Application Developer',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Portfolio Site for Özgür Uysal, Designer & Front End Developer' },
+            { hid: 'description', name: 'description', content: 'Portfolio Site for Rebecca, Application Developer' },
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -28,27 +28,21 @@ module.exports = {
     ],
 
     build: {
-        extend(config, ctx) {
-            if (ctx.dev && ctx.isClient) {
-                config.module.rules.push({
-                    enforce: 'pre',
-                    test: /\.(js|vue)$/,
-                    loader: 'eslint-loader',
-                    exclude: /(node_modules)/,
-                });
+        extend (config, { isDev }) {
+            if (isDev && process.client) {
+            config.module.rules.push({
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/
+            })
             }
-
-            // We are removing the SVGs from URL loader's test property
-            // We'll handle them with svg-sprite-loader.js in plugins folder
-            const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
-            svgRule.test = /\.(png|jpe?g|gif|webp)$/;
         },
-
-        vendor: ['axios'],
+        // vendor: ['axios'],
     },
 
     env: {
-        dribbbleToken: '9e096a9630f0d5572b692746bcdc13c20f09874c814d785cffd71854fbc3bd3a',
-        email: 'ozguruysal@gmail.com',
+        dribbbleToken: '07d241231bbcab15c7a157563907a41a34496d03b811c16a87fe4c190c772344',
+        email: 'kebearry@gmail.com',
     },
 };

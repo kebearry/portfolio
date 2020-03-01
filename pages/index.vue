@@ -2,7 +2,7 @@
     <div class="site-content">
         <hero></hero>
         <about></about>
-        <work :dribbbleShots="dribbbleShots"></work>
+        <work :dribbbleShots="dribbbleShots" :myRepositories="myRepositories"></work>
         <contact></contact>
     </div>
 </template>
@@ -26,12 +26,19 @@ export default {
 
   async asyncData() {
     try {
+      let myRepositories; 
+
       const { data } = await axios.get(
         "https://api.dribbble.com/v2/user/shots?page=1&per_page=15",
         {
           headers: { Authorization: `Bearer ${process.env.dribbbleToken}` }
         }
       );
+
+      await axios.get(
+        "https://api.github.com/users/kebearry/repos"
+      ).then(response => (myRepositories = response.data))
+
 
       const excludedShots = [
         3752525, // Dribbble invites
@@ -44,11 +51,26 @@ export default {
         shot => !excludedShots.includes(shot.id)
       );
       const dribbbleShots = filteredShots.slice(0, 9);
-
-      return { dribbbleShots };
+      console.log(dribbbleShots + 'end of dribble' +myRepositories)
+      return { dribbbleShots, myRepositories};
     } catch (err) {
-      return { dribbbleShots: [] };
+      return { dribbbleShots: [], myRepositories: []};
     }
-  }
+  },
+  //   async fetchRepoData(){
+  //   try{
+  //     const { data } = await axios.get(
+  //       "https://api.github.com/users/kebearry/repos"
+  //     )
+  //     const filteredShots = data.filter(
+  //       shot => !excludedShots.includes(shot.id)
+  //     );
+  //     const myRepositories = filteredShots.slice(0, 9);
+  //     console.log(myRepositories)
+  //     return { myRepositories };
+  //   } catch (err){
+  //     return { myRepositories: []}
+  //   }
+  // }
 };
 </script>

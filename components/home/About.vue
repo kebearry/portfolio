@@ -1,35 +1,42 @@
 <template>
-    <section class="about text-center pt-10 pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
+    <section class="about text-center pt-2 pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
         <div class="container">
-            <h1 class="mb-5">About Me &amp; My Skills</h1>
             <div class="row justify-content-md-center">
                 <div class="col-md-8">
-                    <p class="lead mb-8">After 15+ years of expertise in foreign business relations and a simultaneous 5+ years in graphics design and software development both in open-source and freelance projects, I have decided to follow my passion for design and programming and I’m currently working remotely for <a href="http://object.net/">Object.NET, Inc.</a> as a <strong>Designer &amp; Front End Developer.</strong></p>
+                    <p class="lead mb-8"><i>Before</i> I moved into Application Development, I never quite found a perfect fit. 
+                    I have done Digital Marketing, Graphic Design, Search Engine Optimization, Content Marketing and even IT Project Management. 
+                    I was performing in my jobs, yet it <i>wasn't quite enough.</i> 
+                    I then fell in love with building my mini aesthetic world with the power of code.
+        I knew I had to follow my passion for design and programming when I don't mind doing this for fun even out of work. 
+        <br/>
+        <strong claas="mt-2">I’m currently working for <a href="https://www.accenture.com/sg-en/services/interactive-index">Accenture Interactive Delivery</a> as a Full Stack Developer, with a specialization in Frontend Development.</strong></p>
                 </div>
             </div>
-            <div class="row no-gutters">
+            <div class="row no-gutters extra-animation">
                 <div class="col-md-6">
                     <div class="about-card designer mb-3">
-                        <icon name="design" class="text-primary mb-5" width="48" height="48"></icon>
-                        <h2 class="text-primary mb-5">Designer</h2>
-                        <p class="text-secondary mb-5">I'm a multidisciplinary designer. I love and follow simple, minimalistic and UX oriented design rules.</p>
-                        <p class="text-primary mb-2">I love to design:</p>
-                        <p class="text-secondary mb-5">UI, UX, Web, App, Illustration, Logo &amp; Brand Identity</p>
-                        <p class="text-primary mb-2">Softwares I use:</p>
-                        <p class="text-secondary">Adobe Illustrator <br />Adobe Photoshop <br />Adobe Lightroom</p>
+                        <icon name="design" class="pink-text mb-5" width="48" height="48"></icon>
+                        <h2 class="pink-text mb-5">Designer</h2>
+                        <p class="text-secondary mb-5">I'm a user-centric designer. I believe that User Interface is meant to be intuitive. I like to think of it as a joke; If you have to explain it, it's probably not that good.</p>
+                        <p class="pink-text mb-2">I love to design:</p>
+                        <p class="text-secondary mb-5">Web/Mobile Applications, UI Central Design System, Brand Identity, Graphic Design &amp; User Journey</p>
+                        <p class="pink-text mb-2">Softwares I use:</p>
+                        <p class="text-secondary">Adobe Illustrator <br />Adobe Indesign <br />Adobe Photoshop <br />AdobeXD <br />Figma<br />Invision<br />Sketch<br />Zeplin</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="about-card developer">
                         <icon name="console" class="text-primary mb-5" width="48" height="48"></icon>
                         <h2 class="text-primary mb-5">Developer</h2>
-                        <p class="text-secondary mb-5">I love coding my own designs using the latest technologies and trends by chosing the right tools for the job.</p>
-                        <p class="text-primary mb-2">Favourite Languages:</p>
-                        <p class="text-secondary mb-5">JavaScript, HTML, CSS, Less, Sass, PHP</p>
+                        <p class="text-secondary mb-4">I'm passionate about building software. I enjoy using my eye for design, my unequivocal love for building things, and my mission-driven work ethic to literally change the world.</p>
+                        <p class="text-primary mb-2">Skills:</p>
+                        <p class="text-secondary mb-4">Java, JavaScript, MuleSoft, NodeJS, Python, <br/>HTML, CSS, Less, Sass</p>
                         <p class="text-primary mb-2">Frameworks &amp; Libraries:</p>
-                        <p class="text-secondary mb-5">Vue.js, React, jQuery, Node, Bootstrap</p>
+                        <p class="text-secondary mb-4">Angular, Ant Mobile Design, Bootstrap, Material UI, React, React Native, VueJS</p>
                         <p class="text-primary mb-2">Database:</p>
-                        <p class="text-secondary">MongoDB, MySQL</p>
+                        <p class="text-secondary mb-4">MongoDB, MySQL, PostgresQL</p>
+                        <p class="text-primary mb-2">Cloud Technologies:</p>
+                        <p class="text-secondary">AWS API Gateway, AWS CodeCommit, AWS EC2, AWS Lambda Functions, AWS S3</p>
                     </div>
                 </div>
             </div>
@@ -63,28 +70,29 @@ export default {
   position: relative;
   overflow: hidden;
 
-  @include media-breakpoint-up(sm) {
-    padding: 5.25rem 6.25rem;
+  .pink-text{
+    color: $pink
   }
 
-  &:after {
-    position: absolute;
-    display: block;
-    border-radius: 20rem;
-    background-color: theme-color("primary");
-    content: "";
-    z-index: -1;
-    opacity: 0.07;
+  @include media-breakpoint-up(sm) {
+    padding: 4.25rem 6.25rem;
   }
 
   &.designer {
     border-bottom-width: 0;
 
     &:after {
-      width: 20rem;
-      height: 20rem;
+      width: 25rem;
+      height: 25rem;
       bottom: 5rem;
       left: -35%;
+      position: absolute;
+      display: block;
+      border-radius: 20rem;
+      background-color: $pink;
+      content: "";
+      z-index: -1;
+      opacity: 0.07;
     }
 
     @include media-breakpoint-up(md) {
@@ -99,7 +107,29 @@ export default {
       height: 25rem;
       top: 5rem;
       right: -40%;
+      position: absolute;
+      display: block;
+      border-radius: 20rem;
+      background-color: theme-color("primary");
+      content: "";
+      z-index: -1;
+      opacity: 0.07;
     }
   }
+}
+.lead{
+  font-size: 1rem;
+  @media only screen and (min-width: 640px) {
+		font-size: 1.25rem;
+	}
+}
+
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
+}
+.extra-animation{
+  animation-name: slide;
+  animation-duration: 2s;
 }
 </style>

@@ -5,11 +5,9 @@
                 <h1 class="mb-5">Get in Touch with Me!</h1>
                 <p class="lead">You can follow me or get in touch with me via the following sites or send me an email.</p>
                 <ul class="social-links list-inline pt-5">
-                    <li class="list-inline-item"><a class="twitter" href="https://twitter.com/_ozguruysal" target="_blank"><icon name="twitter" width="40" height="40"></icon></a></li>
-                    <li class="list-inline-item"><a class="github" href="https://github.com/ozguruysal" target="_blank"><icon name="github" width="40" height="40"></icon></a></li>
-                    <li class="list-inline-item"><a class="dribbble" href="https://dribbble.com/ozguruysal" target="_blank"><icon name="dribbble" width="40" height="40"></icon></a></li>
-                    <li class="list-inline-item"><a class="behance" href="https://www.behance.net/ozguruysal" target="_blank"><icon name="behance" width="40" height="40"></icon></a></li>
-                    <li class="list-inline-item"><a class="linkedin" href="https://www.linkedin.com/in/ozgur-uysal" target="_blank"><icon name="linkedin" width="40" height="40"></icon></a></li>
+                    <li class="list-inline-item"><a class="github" href="https://github.com/kebearry" target="_blank"><icon name="github" width="40" height="40"></icon></a></li>
+                    <li class="list-inline-item"><a class="dribbble" href="https://dribbble.com/kebearry" target="_blank"><icon name="dribbble" width="40" height="40"></icon></a></li>
+                    <li class="list-inline-item"><a class="linkedin" href="https://www.linkedin.com/in/rebecca965" target="_blank"><icon name="linkedin" width="40" height="40"></icon></a></li>
                     <li class="list-inline-item"><a class="email" id="email" href=""><icon name="envelope" width="40" height="40"></icon></a></li>
                 </ul>
             </div>
