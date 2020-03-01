@@ -24,7 +24,7 @@ export default {
 @import "../assets/scss/overrides/bootstrap/variables";
 
 .site-footer {
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   font-size: 0.9375rem;
   border-top: 1px solid $blue;
   background-color: $blue;
