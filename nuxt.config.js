@@ -7,7 +7,6 @@ module.exports = {
             { hid: 'description', name: 'description', content: 'Portfolio Site for Rebecca, Application Developer' },
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         ],
     },
 
