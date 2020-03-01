@@ -37,14 +37,7 @@ module.exports = {
                     exclude: /(node_modules)/,
                 });
             }
-
-            // We are removing the SVGs from URL loader's test property
-            // We'll handle them with svg-sprite-loader.js in plugins folder
-            const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
-            svgRule.test = /\.(png|jpe?g|gif|webp)$/;
-        },
-
-        vendor: ['axios'],
+        }
     },
 
     env: {
