@@ -83,4 +83,8 @@ export default {
 .pink{
   background: $pink
 }
+.btn{
+  color: white; 
+  font-weight: bold;
+}
 </style>

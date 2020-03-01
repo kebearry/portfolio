@@ -28,5 +28,7 @@ export default {
   font-size: 0.9375rem;
   border-top: 1px solid $blue;
   background-color: $blue;
+  color: white;
+  font-weight: bold;
 }
 </style>

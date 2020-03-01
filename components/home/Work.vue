@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="lead mb-8">Here’s my github feed from <a href="https://github.com/kebearry">GitHub</a>.                     
+                    <p class="lead mb-8 mt-4">Here’s my github feed from <a href="https://github.com/kebearry">GitHub</a>.                     
                     You can see more of my code at <a href="https://github.com/kebearry">GitHub.</a></p>
                 </div>
             </div>
@@ -164,7 +164,8 @@ figure {
 
 .btn {
   width: 100%;
-
+  color: white; 
+  font-weight: bold; 
   @include media-breakpoint-up(sm) {
     width: 13.75rem;
   }
