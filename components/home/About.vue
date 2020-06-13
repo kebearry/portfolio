@@ -2,7 +2,7 @@
     <section class="about text-center pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
         <div class="container">
             <div class="row justify-content-md-center">
-                <img src="https://i.imgur.com/mHdwhbb.png" class="mb-4">
+                <img src="https://i.imgur.com/mHdwhbb.png" class="mb-4 full-width">
                 <div class="col-md-8">
                     <p class="lead mb-8"><i>Before</i> I moved into Application Development, I never quite found a perfect fit. 
                     I have done Digital Marketing, Graphic Design, Search Engine Optimization, Content Marketing and even IT Project Management. 
@@ -123,6 +123,9 @@ export default {
   @media only screen and (min-width: 640px) {
 		font-size: 1.25rem;
 	}
+}
+.full-width{
+  width: 90vw;
 }
 
 @keyframes slide {
