@@ -2,8 +2,8 @@
     <section class="contact text-center pt-10 pb-10 pink" id="contact">
         <div class="container">
             <div class="col">
-                <h1 class="mb-5 text-white">Get in Touch with Me!</h1>
-                <p class="lead text-white">You can follow me or get in touch with me via the following sites or send me an email.</p>
+                <h1 class="mb-4 text-white">Get in Touch with Me!</h1>
+                <p class="lead text-white mb-8">You can follow me or get in touch with me via the following sites or send me an email.</p>
                 <img class="img-fluid round" src="https://media-exp1.licdn.com/dms/image/C5103AQF_Gp-OX-ECzg/profile-displayphoto-shrink_400_400/0?e=1597276800&v=beta&t=t7bkfjIbhEer9yAmWllvlD8fCWQw0X6bcnku_VLkn-c">
                 <ul class="social-links list-inline pt-3">
                     <li class="list-inline-item"><a class="github" href="https://github.com/kebearry" target="_blank"><icon name="github" width="40" height="40"></icon></a></li>

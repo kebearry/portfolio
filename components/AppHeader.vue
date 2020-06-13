@@ -4,11 +4,12 @@
             <a class="navbar-brand" href="https:///linkedin.com/in/rebecca965" target="_blank">
                 <div class="title">REBECCA TAN</div>
             </a>
-
+    
             <div class="site-navigation ml-auto">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about" @click="onNavClick">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#work" @click="onNavClick">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog" @click="onNavClick">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials" @click="onNavClick">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" @click="onNavClick">Contact</a></li>
                 </ul>
@@ -19,24 +20,25 @@
 
 <script>
 export default {
-  name: "AppHeader",
+    name: "AppHeader",
 
-  data() {
-    return {
-      isMobileMenuOpen: false
-    };
-  },
+    data() {
+        return {
+            isMobileMenuOpen: false
+        };
+    },
 
-  methods: {
-    onNavClick(e) {
-      this.isMobileMenuOpen = false;
-      this.$scrollTo(e.target.hash);
+    methods: {
+        onNavClick(e) {
+            this.isMobileMenuOpen = false;
+            this.$scrollTo(e.target.hash);
+        }
     }
-  }
 };
 </script>
+
 <style>
-.navbar-light .navbar-brand .title{
-  font-size: 1.5rem;
+.navbar-light .navbar-brand .title {
+    font-size: 1.5rem;
 }
 </style>
