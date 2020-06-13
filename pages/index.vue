@@ -3,6 +3,7 @@
         <hero></hero>
         <about></about>
         <work :dribbbleShots="dribbbleShots" :myRepositories="myRepositories"></work>
+        <testimonial></testimonial>
         <contact></contact>
     </div>
 </template>
@@ -13,6 +14,7 @@ import Hero from "../components/home/Hero.vue";
 import About from "../components/home/About.vue";
 import Work from "../components/home/Work.vue";
 import Contact from "../components/home/Contact.vue";
+import Testimonial from "../components/home/Testimonial.vue";
 
 export default {
   name: "Home",
@@ -21,7 +23,8 @@ export default {
     Hero,
     About,
     Work,
-    Contact
+    Contact,
+    Testimonial,
   },
 
   async asyncData() {

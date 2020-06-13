@@ -9,6 +9,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about" @click="onNavClick">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#work" @click="onNavClick">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials" @click="onNavClick">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" @click="onNavClick">Contact</a></li>
                 </ul>
             </div>
@@ -34,3 +35,8 @@ export default {
   }
 };
 </script>
+<style>
+.navbar-light .navbar-brand .title{
+  font-size: 1.5rem;
+}
+</style>
