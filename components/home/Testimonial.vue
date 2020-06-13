@@ -1,5 +1,5 @@
 <template> 
-  <section class="about text-center pt-8" id="testimonials">
+  <section class="about text-center pt-8 pl-4 pr-4" id="testimonials">
     <h1 class="mb-5">What Others Say About Me</h1>
     <div class="wrapper border-radius">
       <div class="description text-right">
@@ -55,7 +55,7 @@ export default {
 @import "../../assets/scss/vendor/bootstrap/mixins";
 
 .wrapper {
-  width: 400px;
+  width: 95vw;
   height: 200px;
   display: table;
   border: 5px solid #111;
