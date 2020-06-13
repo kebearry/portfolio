@@ -55,7 +55,6 @@ export default {
 @import "../../assets/scss/vendor/bootstrap/mixins";
 
 .wrapper {
-  width: 95vw;
   height: 200px;
   display: table;
   border: 5px solid #111;
