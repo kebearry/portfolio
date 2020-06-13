@@ -1,7 +1,8 @@
 <template>
-    <section class="about text-center pt-5 pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
+    <section class="about text-center pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
         <div class="container">
             <div class="row justify-content-md-center">
+                <img src="https://i.imgur.com/mHdwhbb.png" class="mb-4">
                 <div class="col-md-8">
                     <p class="lead mb-8"><i>Before</i> I moved into Application Development, I never quite found a perfect fit. 
                     I have done Digital Marketing, Graphic Design, Search Engine Optimization, Content Marketing and even IT Project Management. 

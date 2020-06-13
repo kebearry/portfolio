@@ -11,7 +11,4 @@ $ yarn run dev
 
 # generate static project
 $ yarn run generate
-
-# deploy project to 'gh-pages' branch
-$ yarn run deploy
 ```

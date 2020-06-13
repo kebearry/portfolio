@@ -1,7 +1,7 @@
 <template>
-        <div class="hero d-flex flex-column justify-content-center text-center pt-1 pl-4 pr-4 pl-sm-0 pr-sm-0">
+        <div class="hero d-flex flex-column justify-content-center text-center pt-8 pl-4 pr-4 pl-sm-0 pr-sm-0">
             <h1>Application Developer</h1>
-            <p class="lead mb-lg-5 subtitle">I love design. I love coding. I love bringing designs to life through code.</p>
+            <p class="lead mb-lg-5 subtitle">I love designing. I love coding. I love bringing designs to life through code.</p>
         </div>
 </template>
 
@@ -19,7 +19,6 @@ export default {
 @import "../../assets/scss/vendor/bootstrap/mixins";
 
 .hero {
-  height: calc(38vh - #{$navbar-height});
 
   @include media-breakpoint-up(sm) {
   }
