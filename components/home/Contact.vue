@@ -4,7 +4,7 @@
             <div class="col">
                 <h1 class="mb-5">Get in Touch with Me!</h1>
                 <p class="lead">You can follow me or get in touch with me via the following sites or send me an email.</p>
-                <img class="img-fluid round" src="https://media-exp1.licdn.com/dms/image/C5103AQF_Gp-OX-ECzg/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=QTEl_PESsPPleabZRCDri01RtwcJE1rZDbH6US0CKpY">
+                <img class="img-fluid round" src="https://media-exp1.licdn.com/dms/image/C5103AQF_Gp-OX-ECzg/profile-displayphoto-shrink_400_400/0?e=1597276800&v=beta&t=t7bkfjIbhEer9yAmWllvlD8fCWQw0X6bcnku_VLkn-c">
                 <ul class="social-links list-inline pt-3">
                     <li class="list-inline-item"><a class="github" href="https://github.com/kebearry" target="_blank"><icon name="github" width="40" height="40"></icon></a></li>
                     <li class="list-inline-item"><a class="dribbble" href="https://dribbble.com/kebearry" target="_blank"><icon name="dribbble" width="40" height="40"></icon></a></li>

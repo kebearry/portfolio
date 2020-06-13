@@ -38,7 +38,7 @@
                             <img class="img-fluid" src="https://i0.wp.com/syncedreview.com/wp-content/uploads/2019/10/github-logo-768x373.jpeg?fit=768%2C373&ssl=1" :alt="shot.name">
                             <figcaption class="d-flex flex-column justify-content-center">
                                 <div class="title">{{ shot.name }}</div>
-                                <a :href="shot.url" target="_blank"><icon name="link-external" class="mr-2 mb-1" width="16" height="16"></icon>View on GitHub</a>
+                                <a :href="shot.svn_url" target="_blank"><icon name="link-external" class="mr-2 mb-1" width="16" height="16"></icon>View on GitHub</a>
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>

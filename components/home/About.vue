@@ -7,7 +7,7 @@
                     I have done Digital Marketing, Graphic Design, Search Engine Optimization, Content Marketing and even IT Project Management. 
                     I was performing in my jobs, yet it <i>wasn't quite enough.</i> 
                     I then fell in love with building my mini aesthetic world with the power of code.
-        I knew I had to follow my passion for design and programming when I don't mind doing this for fun even out of work. 
+                    I knew I had to follow my passion for design and programming when I don't mind doing this for fun even out of work. 
         <br/>
         <strong claas="mt-2">I’m currently working for <a href="https://www.accenture.com/sg-en/services/interactive-index">Accenture Interactive Delivery</a> as a Full Stack Developer, with a specialization in Frontend Development.</strong></p>
                 </div>
@@ -30,7 +30,7 @@
                         <h2 class="text-primary mb-5">Developer</h2>
                         <p class="text-secondary mb-4">I'm passionate about building software. I enjoy using my eye for design, my unequivocal love for building things, and my mission-driven work ethic to literally change the world.</p>
                         <p class="text-primary mb-2">Skills:</p>
-                        <p class="text-secondary mb-4">Java, JavaScript, MuleSoft, NodeJS, Python, <br/>HTML, CSS, Less, Sass</p>
+                        <p class="text-secondary mb-4">Java, JavaScript, MuleSoft, NodeJS, Python, <br/>Jquery, HTML, CSS, Less, Sass</p>
                         <p class="text-primary mb-2">Frameworks &amp; Libraries:</p>
                         <p class="text-secondary mb-4">Angular, Ant Mobile Design, Bootstrap, Material UI, React, React Native, VueJS</p>
                         <p class="text-primary mb-2">Database:</p>
