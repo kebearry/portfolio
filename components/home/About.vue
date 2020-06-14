@@ -123,7 +123,7 @@ export default {
 
 .responsive-pad {
     @media only screen and (min-width: 768px) {
-        margin-top: -2rem;
+        margin-top: -4rem;
     }
     @media only screen and (max-width: 640px) {
     }

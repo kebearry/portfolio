@@ -1,9 +1,9 @@
 <template>
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-white" :class="{open: isMobileMenuOpen}">
-            <a class="navbar-brand" href="https:///linkedin.com/in/rebecca965" target="_blank">
-                <div class="title">REBECCA TAN</div>
-            </a>
+            <nuxt-link class="navbar-brand" to="/">
+                <img src="https://i.imgur.com/mHdwhbb.png" width="100">
+            </nuxt-link>
             <div class="hamburger-menu ml-auto d-md-none" @click="isMobileMenuOpen = !isMobileMenuOpen">
                 <span></span>
             </div>

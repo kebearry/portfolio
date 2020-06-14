@@ -75,6 +75,7 @@ $shadow: rgba(0, 0, 0, 0.2);
     display: block;
     color: $gray-900;
     text-decoration: none;
+    padding-bottom: 2rem;
     &:hover .post-description {
         @include transition(color 0.3s ease);
     }
