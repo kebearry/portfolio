@@ -57,10 +57,10 @@ export default {
                 })
 
             const excludedShots = [
-                3752525, // Dribbble invites
-                3882608, // This website
-                3663209, // UI for Bridge.NET Unit Test Results
-                3489448 // XLRStats Dashboard
+                3752525,
+                3882608,
+                3663209,
+                3489448,
             ];
 
             const filteredShots = data.filter(

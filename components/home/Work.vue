@@ -36,7 +36,7 @@
             <div class="row">
 <template v-if="myRepositories.length>
      0">
-    <div class="col-lg-3 mb-4" v-for="shot in myRepositories" :key="myRepositories.id">
+    <div class="col-lg-4 mb-4" v-for="shot in myRepositories" :key="myRepositories.id">
         <div class="movie-card" data-movie="superbearree">
             <div class="movie-card__overlay"></div>
             <div class="movie-card__share"></div>
