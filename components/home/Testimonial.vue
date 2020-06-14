@@ -20,7 +20,7 @@
       <div class="title"><small>Build</small>Scalable<small>Components</small> Minimal<small>Supervision</small></div>
     </div>
     <div class="wrapper">
-      <div class="title">Tripple-hatted <small>back-end developer, front-end developer and a UI designer</small></div>
+      <div class="title">Triple-hatted <small>back-end developer, front-end developer and a UI designer</small></div>
       <div class="description">
           <p> I was thoroughly impressed with what Rebecca brought to the table on a technical front. Her work was not only well thought out, but they consistently met the high quality demanded by our project managers. Rebecca also never failed to brighten up the room with her cheerful disposition and was a joy to work with!</p>
       </div>
