@@ -43,4 +43,10 @@ export default {
 .navbar-light .navbar-brand .title {
     font-size: 1.5rem;
 }
+
+@media(max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 2.8rem;
+    }
+}
 </style>

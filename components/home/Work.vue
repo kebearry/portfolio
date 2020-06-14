@@ -37,7 +37,8 @@
                         <figure>
                             <img class="img-fluid" :src="shot.owner.avatar_url">
                             <figcaption class="d-flex flex-column justify-content-center">
-                                <div class="gallery-title">{{ shot.name }}</div>
+                                <div class="gallery-title font-weight-bold">{{ shot.name }}</div>
+                                <div class="gallery-title">{{ shot.description }}</div>
                                 <a :href="shot.svn_url" target="_blank"><icon name="link-external" class="mr-2 mb-1" width="16" height="16"></icon>View on GitHub</a>
                             </figcaption>
                             <div class="overlay"></div>
