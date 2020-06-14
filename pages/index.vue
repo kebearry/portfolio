@@ -48,7 +48,7 @@ export default {
 
             await axios.get("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kebearry", {
                     params: {
-                        t: Math.round(+new Date()/1000)
+                        t: Math.round(+new Date() / 1000)
                     }
                 })
                 .then(response => response.data)

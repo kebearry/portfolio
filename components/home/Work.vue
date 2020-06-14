@@ -35,7 +35,7 @@
               <template v-if="myRepositories.length>0">
                         <div class="col-lg-3" v-for="shot in myRepositories" :key="myRepositories.id">
                         <figure>
-                            <img class="img-fluid" src="https://i0.wp.com/syncedreview.com/wp-content/uploads/2019/10/github-logo-768x373.jpeg?fit=768%2C373&ssl=1" :alt="shot.name">
+                            <img class="img-fluid" :src="shot.owner.avatar_url">
                             <figcaption class="d-flex flex-column justify-content-center">
                                 <div class="gallery-title">{{ shot.name }}</div>
                                 <a :href="shot.svn_url" target="_blank"><icon name="link-external" class="mr-2 mb-1" width="16" height="16"></icon>View on GitHub</a>
