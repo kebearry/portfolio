@@ -2,18 +2,20 @@
     <section class="about text-center pt-8" id="blog">
         <div class="container-fluid">
             <h1 class="mb-5">I write, lesser than I wish to</h1>
-            <template v-if="myBlogPosts.length>0">
-                    <a class="card-link" v-for="blog in myBlogPosts" :key="blog.id" :href="blog.link" >
-                      <article class="blog-card">
-                        <img class="post-image" :src="blog.thumbnail" />
-                        <div class="article-details">
-                          <h3 class="post-title">{{shortenText(blog.title, 0, 80) }}...</h3>
-                            <p class="post-description">...{{shortenText(stripHtml(blog.description), 30, 300) }}...</p>
-                            <p class="post-author">By {{ blog.author }}</p>
-                        </div>
-                      </article>
-                    </a>
-             </template>
+            <div class="row">
+                <template v-if="myBlogPosts.length>0">
+                        <a class="card-link col-lg-6" v-for="blog in myBlogPosts" :key="blog.id" :href="blog.link" >
+                        <article class="blog-card">
+                            <img class="post-image" :src="blog.thumbnail" />
+                            <div class="article-details">
+                            <h3 class="post-title">{{shortenText(blog.title, 0, 80) }}...</h3>
+                                <p class="post-description">...{{shortenText(stripHtml(blog.description), 30, 300) }}...</p>
+                                <p class="post-author">By {{ blog.author }}</p>
+                            </div>
+                        </article>
+                        </a>
+                </template>
+             </div>
           </div>
       </section>
 </template>
@@ -68,6 +70,7 @@ $shadow: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.1875rem 1.5rem $shadow;
     border-radius: 0.375rem;
     overflow: hidden;
+    min-height: 350px;
 }
 
 .card-link {
@@ -131,7 +134,7 @@ $shadow: rgba(0, 0, 0, 0.2);
 @media (max-width: 40rem) {
     #container {
         width: 18rem;
-        height: 27.25rem;
+        height: 50rem;
     }
     .blog-card {
         flex-wrap: wrap;
