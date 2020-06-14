@@ -1,5 +1,5 @@
 <template>
-        <div class="hero d-flex flex-column justify-content-center text-center pt-8 pl-4 pr-4 pl-sm-0 pr-sm-0">
+        <div class="hero d-flex flex-column justify-content-center text-center pt-8 pl-4 pr-4 pl-sm-0 pr-sm-0 mt-4">
             <h1>Application Developer</h1>
             <p class="lead mb-lg-5 subtitle">I love designing. I love coding. I love bringing designs to life through code.</p>
         </div>
