@@ -29,18 +29,18 @@
                 </ul>
                 <a class="btn btn-primary" href="https://drive.google.com/file/d/1eF8z0n6RpFwqNouiqxQGjBK8w7USZ0Mx/view" target="_blank">I want to take a look at your resume!</a>
                 <svg viewBox="0 0 960 300" class="svg-special">
-    	<symbol id="s-text">
-    		<text text-anchor="middle" x="50%" y="80%">Work with me</text>
-    	</symbol>
-    
-    	<g class = "g-ants">
-    		<use xlink:href="#s-text" class="text-copy"></use>
-    		<use xlink:href="#s-text" class="text-copy"></use>
-    		<use xlink:href="#s-text" class="text-copy"></use>
-    		<use xlink:href="#s-text" class="text-copy"></use>
-    		<use xlink:href="#s-text" class="text-copy"></use>
-    	</g>
-    </svg>
+        	<symbol id="s-text">
+        		<text text-anchor="middle" x="50%" y="80%">Work with me</text>
+        	</symbol>
+        
+        	<g class = "g-ants">
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        		<use xlink:href="#s-text" class="text-copy"></use>
+        	</g>
+        </svg>
             </div>
         </div>
     </section>
@@ -128,7 +128,7 @@ export default {
     height: 300px;
     margin: 0 auto;
     @media screen and (max-width: 1024px) {
-      display: none;
+        display: none;
     }
 }
 
