@@ -56,28 +56,32 @@ export default {
   a {
     color: $gray-900;
 
+    &.card-link:hover {
+      @include transition(color 0.3s ease);
+    }
+
     &.twitter:hover {
-      color: #1da1f2;
+      @include transition(color 0.3s ease);
     }
 
     &.github:hover {
-      color: #0366d6;
+      @include transition(color 0.3s ease);
     }
 
     &.dribbble:hover {
-      color: $pink;
+      @include transition(color 0.3s ease);
     }
 
     &.behance:hover {
-      color: #0057ff;
+      @include transition(color 0.3s ease);
     }
 
     &.linkedin:hover {
-      color: #0077b5;
+      @include transition(color 0.3s ease);
     }
 
     &.email:hover {
-      color: $blue;
+      @include transition(color 0.3s ease);
     }
   }
 }

@@ -73,8 +73,11 @@ $shadow: rgba(0, 0, 0, 0.2);
 .card-link {
     position: relative;
     display: block;
-    color: inherit;
+    color: $gray-900;
     text-decoration: none;
+    &:hover .post-description {
+        @include transition(color 0.3s ease);
+    }
     &:hover .post-title {
         @include transition(color 0.3s ease);
     }
