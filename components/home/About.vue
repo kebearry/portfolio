@@ -125,6 +125,9 @@ export default {
     @media only screen and (min-width: 768px) {
         margin-top: -4rem;
     }
+    @media only screen and (max-width: 1024px) {
+        margin-top: 1rem;
+    }
     @media only screen and (max-width: 640px) {
     }
 }

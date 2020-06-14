@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .navbar {
     position: fixed;
     /* Set the navbar to fixed position */
@@ -50,8 +50,13 @@ export default {
     z-index: 1000;
 }
 
-.navbar-light .navbar-brand .title {
-    font-size: 1.5rem;
+.navbar-brand {
+    align-items:center;
+    padding-top:0.5rem;
+    padding-bottom:1rem;
+    @media only screen and (min-width: 768px) {
+        padding-top: 2rem;
+    }
 }
 
 @media(max-width: 767px) {
