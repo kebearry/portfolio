@@ -40,6 +40,16 @@ export default {
 </script>
 
 <style>
+.navbar {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+}
+
 .navbar-light .navbar-brand .title {
     font-size: 1.5rem;
 }

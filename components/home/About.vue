@@ -1,5 +1,5 @@
 <template>
-    <section class="about text-center pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0 pt-4" id="about">
+    <section class="about text-center pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
         <div class="container">
             <div class="row justify-content-md-center responsive-pad">
                 <img src="https://i.imgur.com/mHdwhbb.png" class="mb-4 full-width">
