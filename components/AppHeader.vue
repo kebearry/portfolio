@@ -2,7 +2,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-white" :class="{open: isMobileMenuOpen}">
             <nuxt-link class="navbar-brand" to="/">
-                <img src="https://i.imgur.com/mHdwhbb.png" width="100">
+                <img src="https://i.imgur.com/mHdwhbb.png" width="100" class="custom-margin">
             </nuxt-link>
             <div class="hamburger-menu ml-auto d-md-none" @click="isMobileMenuOpen = !isMobileMenuOpen">
                 <span></span>
@@ -52,11 +52,17 @@ export default {
 
 .navbar-brand {
     align-items:center;
+    margin-top: -0.5rem;
     padding-top:0.5rem;
     padding-bottom:1rem;
     @media only screen and (min-width: 768px) {
         padding-top: 2rem;
+        margin-top: 0;
     }
+}
+
+.custom-margin{
+
 }
 
 @media(max-width: 767px) {
