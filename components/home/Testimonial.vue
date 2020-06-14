@@ -56,24 +56,28 @@ export default {
 
 .wrapper {
   @media only screen and (min-width: 600px) {
-    width: 400px;
+    width: 50vw;
+    height: 300px;
+    border: 5px solid $gray-900;
+
   }
   height: 200px;
   display: table;
-  border: 5px solid #111;
+  border: 2px solid $gray-900;
   margin: 50px auto;
   padding: 20px;
   position: relative;
 }
 .wrapper:after, .wrapper:before {
+  quotes: "“" "”" "‘" "’";
   content: "";
   position: absolute;
   font-size: 50px;
-  color: #111;
+  color: $gray-900;
   background: #fff;
 }
 .wrapper:after {
-  content: close-quote;
+  content: open-quote;
   top: 0;
   left: 0;
   -webkit-transform: translate(-50%, -50%);
@@ -81,7 +85,7 @@ export default {
   box-shadow: 10px 10px 0 #fff;
 }
 .wrapper:before {
-  content: open-quote;
+  content: close-quote;
   bottom: 0;
   right: 0;
   -webkit-transform: translate(50%, 50%);
@@ -102,7 +106,7 @@ export default {
 
 .title:nth-child(odd){
   color: #90d3d9;
-  font-size: 40px;
+  font-size: 2.8rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -110,7 +114,7 @@ export default {
 }
 .title:nth-child(even){
   color: #f7a6b4;
-    font-size: 40px;
+    font-size: 2.8rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -118,8 +122,8 @@ export default {
 }
 .title small {
   display: block;
-  font-size: 25px;
-  text-align: right;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .border-radius {
