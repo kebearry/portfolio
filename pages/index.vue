@@ -61,6 +61,7 @@ export default {
                 3882608,
                 3663209,
                 3489448,
+                10506882,
             ];
 
             const filteredShots = data.filter(
