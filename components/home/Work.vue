@@ -189,7 +189,6 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 800px;
     height: 100%;
     min-height: 50px;
     display: block;

@@ -9,7 +9,7 @@
                             <img class="post-image" :src="blog.thumbnail" />
                             <div class="article-details">
                             <h3 class="post-title">{{shortenText(blog.title, 0, 80) }}...</h3>
-                                <p class="post-description">...{{shortenText(stripHtml(blog.description), 30, 300) }}...</p>
+                                <p class="post-description">...{{shortenText(stripHtml(blog.description), 30, 350) }}...</p>
                                 <p class="post-author">By {{ blog.author }}</p>
                             </div>
                         </article>
