@@ -51,18 +51,20 @@ export default {
 }
 
 .navbar-brand {
-    align-items:center;
+    align-items: center;
     margin-top: -0.5rem;
-    padding-top:0.5rem;
-    padding-bottom:1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
     @media only screen and (min-width: 768px) {
         padding-top: 2rem;
         margin-top: 0;
     }
 }
 
-.custom-margin{
-
+.custom-margin {
+    @media only screen and (min-width: 768px) {
+        margin-top: -1rem;
+    }
 }
 
 @media(max-width: 767px) {
