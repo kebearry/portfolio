@@ -106,19 +106,19 @@ export default {
 
 .title:nth-child(odd){
   color: #90d3d9;
-  font-size: 2.8rem;
+  font-size: 2.1rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 20px 0 0;
+  padding: 0 10px 0 0;
 }
 .title:nth-child(even){
   color: #f7a6b4;
-    font-size: 2.8rem;
+  font-size: 2.1rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 0 0 20px
+  padding: 0 0 0 10px;
 }
 .title small {
   display: block;
