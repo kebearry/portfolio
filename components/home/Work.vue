@@ -193,7 +193,8 @@ button {
     min-height: 50px;
     display: block;
     border-radius: 8px;
-    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 16px 16px 32px #d4d4d4, 
+             -16px -16px 32px #ffffff;
     position: relative;
     @media screen and (max-width: 800px) {
         width: 95%;
@@ -304,11 +305,11 @@ button {
 
 .btn-outline {
     background-color: transparent;
-    border: 3px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .special-btn::before {
-    content: '>>';
+    content: '';
     vertical-align: middle;
     font-size: 1.5em;
     padding-right: .5em;
@@ -317,6 +318,7 @@ button {
 .special-btn-outline:hover {
     border-color: $secondary-color;
     color: $secondary-color;
-    box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, .2);
+    box-shadow: 16px 16px 32px #d4d4d4, 
+             -16px -16px 32px #ffffff;
 }
 </style>

@@ -27,7 +27,7 @@
                         </a>
                     </li>
                 </ul>
-                <a class="btn btn-primary" href="https://drive.google.com/file/d/1eF8z0n6RpFwqNouiqxQGjBK8w7USZ0Mx/view" target="_blank">I want to take a look at your resume!</a>
+                <a class="btn popup-button" href="https://drive.google.com/file/d/1eF8z0n6RpFwqNouiqxQGjBK8w7USZ0Mx/view" target="_blank">I want to take a look at your resume!</a>
                 <svg viewBox="0 0 960 300" class="svg-special">
         	<symbol id="s-text">
         		<text text-anchor="middle" x="50%" y="80%">Work with me</text>
@@ -111,6 +111,28 @@ export default {
 .text-white {
     color: white;
 }
+
+//Button Link
+.popup-button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    
+    //Button shape & animation
+    border-radius: 6px;
+    margin: 10px;
+    padding: 1em 3em;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-image: linear-gradient(to right, $blue 0%, #ffabf4 50%, $gray-300 100%);
+    transition: 0.5s;
+    &:hover {
+      background-position: right center;
+    }  
+  }  
 
 .btn {
     color: white;

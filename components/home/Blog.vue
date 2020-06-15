@@ -67,7 +67,8 @@ $shadow: rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     background: $white;
-    box-shadow: 0 0.1875rem 1.5rem $shadow;
+    box-shadow: 16px 16px 32px #d4d4d4, 
+             -16px -16px 32px #ffffff;
     border-radius: 0.375rem;
     overflow: hidden;
     min-height: 350px;
