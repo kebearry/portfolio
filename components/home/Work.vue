@@ -9,23 +9,22 @@
             </div>
             <div class="row">
                 <template v-if="dribbbleShots.length > 0">
-                                                <div class="col-lg-4" v-for="shot in dribbbleShots" :key="shot.id">
-                                                    <figure>
-                                                        <img class="img-fluid" :src="shot.images.hidpi" :alt="shot.title">
-                                                        <figcaption class="d-flex flex-column justify-content-center">
-                                                            <div class="gallery-title">{{ shot.title }}</div>
-                                                            <a :href="shot.html_url" target="_blank"><icon name="link-external" class="mr-2 mb-1" width="16" height="16"></icon>View on Dribbble</a>
-                                                        </figcaption>
-                                                        <div class="overlay"></div>
-                                                    </figure>
-                                                </div>
-</template>
-
-<template v-else>
-    <div class="col text-center">
-        <p>Looks like there's a problem accessing Dribbble API. Please reload the page.</p>
-    </div>
-</template>
+                    <div class="col-lg-4" v-for="shot in dribbbleShots" :key="shot.id">
+                        <figure>
+                            <img class="img-fluid" :src="shot.images.hidpi" :alt="shot.title">
+                            <figcaption class="d-flex flex-column justify-content-center">
+                            <div class="gallery-title">{{ shot.title }}</div>
+                            <a :href="shot.html_url" target="_blank"><icon name="link-external" class="mr-2 mb-1" width="16" height="16"></icon>View on Dribbble</a>
+                            </figcaption>
+                            <div class="overlay"></div>
+                        </figure>
+                    </div>
+                </template>
+                <template v-else>
+                    <div class="col text-center">
+                        <p>Looks like there's a problem accessing Dribbble API. Please reload the page.</p>
+                    </div>
+                </template>
             </div>
             <div class="row">
                 <div class="col">
@@ -34,29 +33,28 @@
                 </div>
             </div>
             <div class="row">
-<template v-if="myRepositories.length>
-     0">
-    <div class="col-lg-4 mb-4" v-for="shot in myRepositories" :key="myRepositories.id">
-        <div class="movie-card" data-movie="superbearree">
-            <div class="movie-card__overlay"></div>
-            <div class="movie-card__share"></div>
-            <div class="movie-card__content">
-                <div class="movie-card__header">
-                    <h3 class="movie-card__title">{{ shot.name }}</h3>
-                    <h4 class="movie-card__info">Github</h4>
-                </div>
-                <p class="movie-card__desc pr-4 pl-4">{{ shot.description }}</p>
-                <button class="special-btn btn-outline" type="button"><a :href="shot.svn_url">View Repository</a></button>
-            </div>
-        </div>
-    </div>
-</template>
-
-<template v-else>
-    <div class="col text-center">
-        <p>Looks like there's a problem accessing Github API. Please reload the page.</p>
-    </div>
-</template>
+                <template v-if="myRepositories.length>
+                    0">
+                    <div class="col-lg-4 mb-4" v-for="shot in myRepositories" :key="myRepositories.id">
+                        <div class="movie-card" data-movie="superbearree">
+                            <div class="movie-card__overlay"></div>
+                            <div class="movie-card__share"></div>
+                            <div class="movie-card__content">
+                                <div class="movie-card__header">
+                                    <h3 class="movie-card__title">{{ shot.name }}</h3>
+                                    <h4 class="movie-card__info">Github</h4>
+                                </div>
+                                <p class="movie-card__desc pr-4 pl-4">{{ shot.description }}</p>
+                                <button class="special-btn btn-outline" type="button"><a :href="shot.svn_url">View Repository</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <template v-else>
+                    <div class="col text-center">
+                        <p>Looks like there's a problem accessing Github API. Please reload the page.</p>
+                    </div>
+                </template>
             </div>
             <div class="row">
                 <div class="col pt-6">
@@ -97,7 +95,6 @@ export default {
 @import "../../assets/scss/vendor/bootstrap/variables";
 @import "../../assets/scss/vendor/bootstrap/mixins";
 $background-image: url(https://avatars2.githubusercontent.com/u/22834157?v=4);
-$secondary-color: #D3D3D3;
 .container-fluid {
     width: 85vw;
     @media (min-width: 1500px) {
@@ -187,14 +184,11 @@ button {
 
 .movie-card {
     background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    min-height: 50px;
     display: block;
     border-radius: 8px;
-    box-shadow: 16px 16px 32px #d4d4d4, 
-             -16px -16px 32px #ffffff;
+    box-shadow: $neumor;
     position: relative;
     @media screen and (max-width: 800px) {
         width: 95%;
@@ -212,16 +206,13 @@ button {
         width: 100%;
         height: 100%;
         border-radius: 8px;
-        background: linear-gradient(to right, rgba(42, 159, 255, .2) 0%, rgba(33, 33, 32, 1) 90%, rgba(33, 33, 32, 1) 100%);
+        background: linear-gradient(to right, rgba(42, 159, 255, .2) 0%, rgba(33, 33, 32, 1) 99%, rgba(33, 33, 32, 1) 100%);
         background-blend-mode: multiply;
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        @media screen and (max-width: 600px) {
-            background: linear-gradient(to bottom, rgba(42, 159, 255, .2) 0%, rgba(33, 33, 32, 1) 90%, rgba(33, 33, 32, 1) 100%);
-        }
     }
     &__share {
         padding: 1em;
@@ -253,7 +244,6 @@ button {
     &__content {
         color: white;
         width: 100%;
-        max-width: 370px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -281,7 +271,7 @@ button {
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: .8em;
-        color: $secondary-color;
+        color: $gray-100;
         line-height: 1;
         margin: 0;
         font-weight: 700;
@@ -305,7 +295,13 @@ button {
 
 .btn-outline {
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 0.5px solid #ffffff;
+    &:hover{
+        border-color: $gray-100;
+        color: $gray-100;
+        box-shadow: 1px 1px 2px #d4d4d4, 
+                -1px -1px 2px #ffffff;
+    }
 }
 
 .special-btn::before {
@@ -313,12 +309,5 @@ button {
     vertical-align: middle;
     font-size: 1.5em;
     padding-right: .5em;
-}
-
-.special-btn-outline:hover {
-    border-color: $secondary-color;
-    color: $secondary-color;
-    box-shadow: 16px 16px 32px #d4d4d4, 
-             -16px -16px 32px #ffffff;
 }
 </style>

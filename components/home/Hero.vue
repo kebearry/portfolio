@@ -20,9 +20,6 @@ export default {
 
 .hero {
 
-  @include media-breakpoint-up(sm) {
-  }
-
     @keyframes bounce {
       0%, 20%, 50%, 80%, 100% {
         -moz-transform: translateY(0);

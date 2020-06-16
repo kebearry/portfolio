@@ -10,7 +10,6 @@
                             <div class="article-details">
                             <h3 class="post-title">{{shortenText(blog.title, 0, 80) }}...</h3>
                                 <p class="post-description">...{{shortenText(stripHtml(blog.description), 30, 350) }}...</p>
-                                <p class="post-author">By {{ blog.author }}</p>
                             </div>
                         </article>
                         </a>
@@ -48,13 +47,9 @@ export default {
 @import "../../assets/scss/vendor/bootstrap/functions";
 @import "../../assets/scss/vendor/bootstrap/variables";
 @import "../../assets/scss/vendor/bootstrap/mixins";
-$bg: #eedfcc;
-$text: #777;
-$black: #121212;
-$white: #fff;
-$red: #e04f62;
 $border: #ebebeb;
 $shadow: rgba(0, 0, 0, 0.2);
+
 .container-fluid {
   width: 85vw;
 
@@ -64,14 +59,11 @@ $shadow: rgba(0, 0, 0, 0.2);
 }
 
 .blog-card {
-    display: flex;
-    flex-direction: column;
     background: $white;
-    box-shadow: 16px 16px 32px #d4d4d4, 
-             -16px -16px 32px #ffffff;
+    box-shadow: $neumor;
     border-radius: 0.375rem;
     overflow: hidden;
-    min-height: 350px;
+    min-height: 310px;
 }
 
 .card-link {
@@ -103,40 +95,14 @@ $shadow: rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
 }
 
-.post-category {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.0625rem;
-    margin: 0 0 0.75rem 0;
-    padding: 0 0 0.25rem 0;
-    border-bottom: 0.125rem solid $border;
-}
-
 .post-title {
     @include transition(color 0.3s ease);
     font-size: 1.125rem;
     line-height: 1.4;
-    color: $black;
-    font-weight: 700;
-    margin: 0 0 0.5rem 0;
-}
-
-.post-author {
-    font-size: 0.875rem;
-    line-height: 1;
-    margin: 1.125rem 0 0 0;
-    padding: 1.125rem 0 0 0;
-    border-top: 0.0625rem solid $border;
+    color: $gray-900;
 }
 
 @media (max-width: 40rem) {
-    #container {
-        width: 18rem;
-        height: 50rem;
-    }
     .blog-card {
         flex-wrap: wrap;
     }

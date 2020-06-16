@@ -128,8 +128,7 @@ export default {
     @media only screen and (max-width: 1024px) {
         margin-top: 1rem;
     }
-    @media only screen and (max-width: 640px) {
-    }
+    @media only screen and (max-width: 640px) {}
 }
 
 @keyframes slide {
