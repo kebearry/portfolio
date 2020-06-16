@@ -106,6 +106,9 @@ export default {
   text-align: center;
   text-transform: uppercase;
   padding: 0 10px 0 0;
+  @media screen and (max-width: 800px) {
+      font-size: 1.8rem;
+  }
   small{
     display: block;
     font-size: 1rem;

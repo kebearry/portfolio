@@ -121,12 +121,10 @@ export default {
 
 //FANCY GRADIENT BUTTON
 .popup-button {
-    text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     border-radius: 8px;
     background-size: 200% auto;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 1px rgba(0, 0, 0, .08);
     background-image: linear-gradient(to right, $blue 0%, #ffabf4 50%, $gray-300 100%);
     transition: 0.5s;
     &:hover {
