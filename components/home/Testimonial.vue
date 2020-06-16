@@ -84,7 +84,7 @@ export default {
           transform: translate(-50%, -50%);
 }
 .wrapper:before {
-  padding-left: 2rem;
+  padding-left: 1.4rem;
   content: close-quote;
   bottom: 0;
   right: 0;
