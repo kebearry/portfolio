@@ -4,6 +4,7 @@
         <about></about>
         <work :dribbbleShots="dribbbleShots" :myRepositories="myRepositories"></work>
         <blog :myBlogPosts="myBlogPosts"></blog>
+        <photography></photography>
         <testimonial></testimonial>
         <contact></contact>
     </div>
@@ -17,6 +18,7 @@ import Work from "../components/home/Work.vue";
 import Contact from "../components/home/Contact.vue";
 import Testimonial from "../components/home/Testimonial.vue";
 import Blog from "../components/home/Blog.vue";
+import Photography from "../components/home/Photography.vue";
 
 export default {
     name: "Home",
@@ -28,6 +30,7 @@ export default {
         Contact,
         Testimonial,
         Blog,
+        Photography,
     },
 
     async asyncData() {
