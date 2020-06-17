@@ -3,22 +3,25 @@
         <h1 class="mb-5">Things I'd do for fun, joy and laughter</h1>
         <div id="gallery">
             <div><img src="https://i.imgur.com/hrDPo9V.jpg" /><a><small>[Photography] </small><br>Family Thing</a></div>
-            <div><img src="https://i.imgur.com/YHbYktK.jpg" /><a><small>[Photography] </small><br>Small Things Matter</a></div>
+            <div><img src="https://i.imgur.com/YHbYktK.jpg" /><a><small>[Photography] </small><br>Friends Thing</a></div>
             <div><img src="https://i.imgur.com/LTwLXT7.jpg" /><a><small>[Photography] </small><br>Of Lights</a></div>
             <div><img src="https://i.imgur.com/wbvcv5z.jpg" /><a><small>[Photography] </small><br>Of Levels</a></div>
             <div><img src="https://i.imgur.com/AHG1Xlg.jpg" /><a><small>[Photography] </small><br>Of Architecture</a></div>
             <div><img src="https://i.imgur.com/rJq2d9l.jpg" /><a><small>[Photography] </small><br>Within Sight</a></div>
             <div><img src="https://i.imgur.com/swmS46b.jpg" /><a><small>[Illustration] </small><br>Of Family</a></div>
-            <div><img src="https://i.imgur.com/c7OYIl3.jpg" /><a><small>[Illustration] </small><br>Of SO</a></div>
             <div><img src="https://i.imgur.com/HIlW2q9.jpg" /><a><small>[Photography] </small><br>Of Clouds and Mountains</a></div>
             <div><img src="https://i.imgur.com/qniGJuy.jpg" /><a><small>[Photography] </small><br>Of Spaces</a></div>
             <div><img src="https://i.imgur.com/OXXHDg3.jpg" /><a><small>[Photography] </small><br>Of Shadows</a></div>
             <div><img src="https://i.imgur.com/uDfODGH.jpg" /><a><small>[Photography] </small><br>Dolly Zoom</a></div>
-            <div><img src="https://i.imgur.com/DAeyaA9.jpg" /><a><small>[Photography] </small><br>Of Conquest</a></div>
-            <div><img src="https://i.imgur.com/untAZKb.jpg" /><a><small>[Photography] </small><br>Of Hanoi</a></div>
+    
             <div><img src="https://i.imgur.com/qhtqLnK.jpg" /><a><small>[Photography] </small><br>Symmetry</a></div>
-            <div><img src="https://i.imgur.com/mrlJN5F.jpg" /><a><small>[Photography] </small><br>Light in Darkness</a></div>
+            <div><img src="https://i.imgur.com/c7OYIl3.jpg" /><a><small>[Illustration] </small><br>Of SO</a></div>
+            <div><img src="https://i.imgur.com/DAeyaA9.jpg" /><a><small>[Photography] </small><br>Of Conquest</a></div>
             <div><img src="https://i.imgur.com/oV8C8FS.jpg" /><a><small>[Photography] </small><br>Of Halong Bay</a></div>
+    
+    
+            <div><img src="https://i.imgur.com/mrlJN5F.jpg" /><a><small>[Photography] </small><br>Light in Darkness</a></div>
+            <div><img src="https://i.imgur.com/untAZKb.jpg" /><a><small>[Photography] </small><br>Of Hanoi</a></div>
             <div><img src="https://i.imgur.com/VrNF3tc.jpg" /><a><small>[Photography] </small><br>Behind The Mask</a></div>
     
     
