@@ -13,7 +13,7 @@ export default ({ app }) => {
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     // Set the current page
-    ga('create', 'UA-15246086-3', 'auto')
+    ga('create', 'UA-146336215-2', 'auto')
 
     // Every time the route changes (fired on initialization too)
     app.router.afterEach((to, from) => {

@@ -14,6 +14,11 @@
                         </article>
                         </a>
                 </template>
+                <template v-else>
+                    <div class="col text-center">
+                        <p>Looks like there's a problem accessing Medium API. Please reload the page.</p>
+                    </div>
+                </template>
              </div>
           </div>
       </section>

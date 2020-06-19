@@ -35,15 +35,27 @@ export default {
 
     async asyncData() {
         try {
-            let theRepo;
             let myRepositories;
             let myBlogPosts;
 
+            /**Dribble Related API**/
             const { data } = await axios.get(
                 "https://api.dribbble.com/v2/user/shots?page=1&per_page=15", {
                     headers: { Authorization: `Bearer ${process.env.dribbbleToken}` }
                 }
             );
+            const excludedShots = [
+                3752525,
+                3882608,
+                3663209,
+                3489448,
+                10506882,
+            ];
+
+            const filteredShots = data.filter(
+                shot => !excludedShots.includes(shot.id)
+            );
+            const dribbbleShots = filteredShots.slice(0, 9);
 
             await axios.get(
                 "https://api.github.com/users/kebearry/repos"
@@ -59,21 +71,9 @@ export default {
                     myBlogPosts = data.items //This is an array with the content. No feed, no info about author etc..
                 })
 
-            const excludedShots = [
-                3752525,
-                3882608,
-                3663209,
-                3489448,
-                10506882,
-            ];
-
-            const filteredShots = data.filter(
-                shot => !excludedShots.includes(shot.id)
-            );
-            const dribbbleShots = filteredShots.slice(0, 9);
             return { dribbbleShots, myRepositories, myBlogPosts };
         } catch (err) {
-            return { dribbbleShots: [], myRepositories: [], myBlogPosts: [] };
+            return { dribbbleShots: [], myRepositories: [], myBlogPosts:[] };
         }
     },
 };
