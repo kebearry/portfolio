@@ -12,7 +12,8 @@
                 </div>
             </div>
             <div class="row no-gutters extra-animation">
-                <div class="col-md-6">
+                <div class="col-md-6 designer-focus">
+                    <div class="layer"></div>
                     <div class="about-card designer mb-3">
                         <icon name="design" class="pink-text mb-5" width="48" height="48"></icon>
                         <h2 class="pink-text mb-5">Designer</h2>
@@ -23,7 +24,7 @@
                         <p class="text-secondary">Adobe Illustrator <br />Adobe Indesign <br />Adobe Photoshop <br />AdobeXD <br />Figma<br />Invision<br />Sketch<br />Zeplin</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 developer-focus">
                     <div class="about-card developer">
                         <icon name="console" class="text-primary mb-5" width="48" height="48"></icon>
                         <h2 class="text-primary mb-5">Developer</h2>
@@ -107,6 +108,32 @@ export default {
             z-index: -1;
             opacity: 0.07;
         }
+    }
+}
+
+.designer-focus {
+    background-image: url(https://i.pinimg.com/originals/26/da/ba/26dabaee331575f7be35d1e329fb0243.png);
+    transition: 0.45s ease-in-out;
+    .layer {
+        background-color: rgba(#fff, 0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.developer-focus {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-outline.png);
+    transition: 0.45s ease-in-out;
+    .layer {
+        background-color: rgba(#fff, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
