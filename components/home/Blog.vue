@@ -4,7 +4,7 @@
             <h1 class="mb-5">I write, lesser than I wish to</h1>
             <div class="row">
                 <template v-if="myBlogPosts.length>0">
-                        <a class="card-link col-lg-6" v-for="blog in myBlogPosts" :key="blog.id" :href="blog.link" >
+                        <a class="card-link col-lg-4" v-for="blog in myBlogPosts" :key="blog.id" :href="blog.link" >
                         <article class="blog-card">
                             <img class="post-image" :src="blog.thumbnail" />
                             <div class="article-details">
@@ -63,12 +63,16 @@ $shadow: rgba(0, 0, 0, 0.2);
   }
 }
 
+.post-description{
+    font-size: 0.8rem;
+}
+
 .blog-card {
     background: $white;
     box-shadow: $neumor;
     border-radius: 0.375rem;
     overflow: hidden;
-    min-height: 310px;
+    min-height: 300px;
 }
 
 .card-link {
