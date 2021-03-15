@@ -1,16 +1,20 @@
 <template>
-        <div class="hero d-flex flex-column justify-content-center text-center pt-8 pl-4 pr-4 pl-sm-0 pr-sm-0 mt-4">
-            <h1 class="pt-8">Hi there, I'm Rebecca. </h1>
-            <p class="lead mb-lg-5 subtitle">I love designing. I love coding. I love bringing designs to life through code.</p>
+    <div
+        class="hero d-flex flex-column justify-content-center text-center pt-8 pl-4 pr-4 pl-sm-0 pr-sm-0 mt-4"
+    >
+        <h1 class="pt-8">Hi there, I'm Rebecca.</h1>
+        <div class="lead-text">
+            I love designing. I love coding. I love bringing designs to life
+            through code.
         </div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Hero"
+    name: "Hero"
 };
 </script>
-
 
 <style lang="scss">
 @import "../../assets/scss/overrides/bootstrap/variables";
@@ -20,49 +24,65 @@ export default {
 
 .hero {
 
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-      }
-      40% {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-      }
-      60% {
-        -moz-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-      }
+    @keyframes reveal {
+        from {
+            width: 0;
+        }
     }
 
-  h1 {
-    margin-bottom: 1.25rem;
-    font-size: 2.5rem;
-    animation-name: bounce;
-    animation-duration: 5s;
+    @keyframes blink {
+        0% {
+            background-color: #60b99a;
+        }
 
-    @include media-breakpoint-up(sm) {
-      font-size: 3.375rem;
+        50% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: #60b99a;
+        }
     }
-  }
 
-  p {
-    font-size: 1.5rem;
-  }
+    h1 {
+        margin-bottom: 1.25rem;
+        font-size: 2.5rem;
 
-  .subtitle{
-    color: $pink;
-    font-weight: 500;
-    font-size: 1.2rem;
-    @media only screen and (min-width: 640px) {
-		  font-size: 1.5rem;
-	  }
-  }
+        @include media-breakpoint-up(sm) {
+            font-size: 3.375rem;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    // Adjust size and animation steps to number of characters present
+    .lead-text {
+        position: relative;
+        width: 50ch;
+        overflow: hidden;
+        color: $pink;
+        font-weight: 500;
+        font-size: 1.2rem;
+        @media only screen and (min-width: 640px) {
+            font-size: 1.5rem;
+        }
+        white-space: nowrap;
+        animation: reveal 3s steps(49, end);
+        margin: 0 auto;
+        padding-bottom: 8px;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: $pink;
+            animation: blink 0.6s infinite;
+        }
+    }
 }
 </style>
