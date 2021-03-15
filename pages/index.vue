@@ -1,5 +1,11 @@
 <template>
     <div class="site-content">
+        <lottie
+            :width="360"
+            :height="360"
+            :options="lottieOptions"
+            v-on:animCreated="handleAnimation"
+        />
         <hero></hero>
         <about></about>
         <work
@@ -20,6 +26,8 @@ import Work from "../components/home/Work.vue";
 import Contact from "../components/home/Contact.vue";
 import Testimonial from "../components/home/Testimonial.vue";
 import Blog from "../components/home/Blog.vue";
+import lottie from "vue-lottie/src/lottie.vue";
+import * as animationData from "/assets/coding-girl.json";
 
 export default {
     name: "Home",
@@ -30,14 +38,28 @@ export default {
         Work,
         Contact,
         Testimonial,
-        Blog
+        Blog,
+        lottie
+    },
+
+    methods: {
+        handleAnimation: function(anim) {
+            this.anim = anim;
+        }
+    },
+
+    data() {
+        return {
+            anim: null, // for saving the reference to the animation
+            lottieOptions: { animationData: animationData.default }
+        };
     },
 
     mounted() {
         if (process.browser) {
             window.addEventListener("hashchange", function() {
                 var current = window.location.hash;
-                console.log("hash changed to "+current);
+                console.log("hash changed to " + current);
             });
         }
     },

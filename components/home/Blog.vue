@@ -139,8 +139,7 @@ $shadow: rgba(0, 0, 0, 0.2);
         rgba(0, 0, 0, 0.762) 94.1%,
         rgba(0, 0, 0, 0.79) 100%
     );
-    backdrop-filter: blur(5px) grayscale(0.4) contrast(0.8) sepia(0.01)
-        hue-rotate(180deg);
+    backdrop-filter: blur(5px) grayscale(0.4) contrast(0.8) sepia(0.01);
     transform: translateY(-50%);
     transition: transform calc(var(--d) * 2) var(--e);
 }

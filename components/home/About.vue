@@ -2,7 +2,6 @@
     <section class="about text-center pb-10 pl-4 pr-4 pl-sm-0 pr-sm-0" id="about">
         <div class="container">
             <div class="row justify-content-md-center responsive-pad">
-                <img src="https://i.imgur.com/mHdwhbb.png" class="mb-4 full-width">
                 <div class="col-md-8">
                     <p class="lead mb-8"><i>Before</i> I moved into Application Development, I never quite found a perfect fit. I have done Digital Marketing, Graphic Design, Search Engine Optimization, Content Marketing and even IT Project Management. I was performing in my
                         jobs, yet it <i>wasn't quite enough.</i> I then fell in love with building my mini aesthetic world with the power of code. I knew I had to follow my passion for design and programming when I don't mind doing this for fun even out of

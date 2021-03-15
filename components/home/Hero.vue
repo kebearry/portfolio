@@ -1,10 +1,10 @@
 <template>
     <div
-        class="hero d-flex flex-column justify-content-center text-center pt-8 pl-4 pr-4 pl-sm-0 pr-sm-0 mt-4"
+        class="hero d-flex flex-column justify-content-center text-center pl-4 pr-4 pl-sm-0 pr-sm-0 mt-4"
     >
-        <h1 class="pt-8">Hi there, I'm Rebecca.</h1>
+        <h1>Hi there, I'm Rebecca.</h1>
         <div class="lead-text">
-           I bring designs to life through code.
+            I bring designs to life through code.
         </div>
     </div>
 </template>
@@ -21,8 +21,12 @@ export default {
 @import "../../assets/scss/vendor/bootstrap/variables";
 @import "../../assets/scss/vendor/bootstrap/mixins";
 
+@media only screen and (min-width: 640px) {
+    .hero.d-flex.flex-column.justify-content-center {
+        padding-bottom: 5em;
+    }
+}
 .hero {
-
     @keyframes reveal {
         from {
             width: 0;
@@ -46,6 +50,7 @@ export default {
     h1 {
         margin-bottom: 1.25rem;
         font-size: 2.5rem;
+        margin-top: -1em;
 
         @include media-breakpoint-up(sm) {
             font-size: 3.375rem;
@@ -66,8 +71,6 @@ export default {
         font-size: 1.2rem;
         @media only screen and (min-width: 640px) {
             font-size: 1.5rem;
-            width: 24ch;
-            animation: reveal 3s steps(24, end);
         }
         white-space: nowrap;
         animation: reveal 3s steps(30, end);
