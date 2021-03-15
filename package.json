@@ -14,7 +14,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-env": "^7.12.17",
     "axios": "^0.19.0",
     "express": "^4.17.1",
     "nuxt": "^2.8.0",

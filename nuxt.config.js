@@ -50,4 +50,19 @@ module.exports = {
         dribbbleToken: '07d241231bbcab15c7a157563907a41a34496d03b811c16a87fe4c190c772344',
         email: 'kebearry@gmail.com',
     },
+
+    babel: {
+        presets() {
+            return [
+                [
+                    '@nuxt/babel-preset-app',
+                    {
+                        corejs: {
+                            version: 3,
+                        },
+                    },
+                ],
+            ];
+        },
+    }
 };
