@@ -4,8 +4,7 @@
     >
         <h1 class="pt-8">Hi there, I'm Rebecca.</h1>
         <div class="lead-text">
-            I love designing. I love coding. I love bringing designs to life
-            through code.
+           I bring designs to life through code.
         </div>
     </div>
 </template>
@@ -32,7 +31,7 @@ export default {
 
     @keyframes blink {
         0% {
-            background-color: #60b99a;
+            background-color: $pink;
         }
 
         50% {
@@ -40,7 +39,7 @@ export default {
         }
 
         100% {
-            background-color: #60b99a;
+            background-color: $pink;
         }
     }
 
@@ -60,7 +59,7 @@ export default {
     // Adjust size and animation steps to number of characters present
     .lead-text {
         position: relative;
-        width: 50ch;
+        width: 24ch;
         overflow: hidden;
         color: $pink;
         font-weight: 500;
@@ -69,7 +68,7 @@ export default {
             font-size: 1.5rem;
         }
         white-space: nowrap;
-        animation: reveal 3s steps(49, end);
+        animation: reveal 3s steps(24, end);
         margin: 0 auto;
         padding-bottom: 8px;
 
