@@ -59,7 +59,7 @@ export default {
     // Adjust size and animation steps to number of characters present
     .lead-text {
         position: relative;
-        width: 24ch;
+        width: 28ch;
         overflow: hidden;
         color: $pink;
         font-weight: 500;
@@ -68,7 +68,7 @@ export default {
             font-size: 1.5rem;
         }
         white-space: nowrap;
-        animation: reveal 3s steps(24, end);
+        animation: reveal 3s steps(28, end);
         margin: 0 auto;
         padding-bottom: 8px;
 
