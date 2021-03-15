@@ -59,16 +59,18 @@ export default {
     // Adjust size and animation steps to number of characters present
     .lead-text {
         position: relative;
-        width: 28ch;
+        width: 30ch;
         overflow: hidden;
         color: $pink;
         font-weight: 500;
         font-size: 1.2rem;
         @media only screen and (min-width: 640px) {
             font-size: 1.5rem;
+            width: 24ch;
+            animation: reveal 3s steps(24, end);
         }
         white-space: nowrap;
-        animation: reveal 3s steps(28, end);
+        animation: reveal 3s steps(30, end);
         margin: 0 auto;
         padding-bottom: 8px;
 
