@@ -14,13 +14,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.12.13",
     "axios": "^0.19.0",
     "express": "^4.17.1",
     "nuxt": "^2.8.0",
     "vue-scrollto": "^2.7.8"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.13.10",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
