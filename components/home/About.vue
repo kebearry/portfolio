@@ -11,7 +11,7 @@
                         <strong claas="mt-2">I’m currently working for <a href="https://www.accenture.com/sg-en/services/interactive-index">Accenture Interactive Delivery</a> as a Full Stack Developer, with a specialization in Frontend Development.</strong></p>
                 </div>
             </div>
-            <div class="row no-gutters extra-animation">
+            <div class="row no-gutters">
                 <div class="col-md-6 designer-focus">
                     <div class="layer"></div>
                     <div class="about-card designer mb-3">
@@ -156,19 +156,5 @@ export default {
         margin-top: 1rem;
     }
     @media only screen and (max-width: 640px) {}
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-.extra-animation {
-    animation-name: slide;
-    animation-duration: 2s;
 }
 </style>

@@ -2,9 +2,11 @@
     <div class="site-content">
         <hero></hero>
         <about></about>
-        <work :dribbbleShots="dribbbleShots" :myRepositories="myRepositories"></work>
+        <work
+            :dribbbleShots="dribbbleShots"
+            :myRepositories="myRepositories"
+        ></work>
         <blog :myBlogPosts="myBlogPosts"></blog>
-        <photography></photography>
         <testimonial></testimonial>
         <contact></contact>
     </div>
@@ -18,7 +20,6 @@ import Work from "../components/home/Work.vue";
 import Contact from "../components/home/Contact.vue";
 import Testimonial from "../components/home/Testimonial.vue";
 import Blog from "../components/home/Blog.vue";
-import Photography from "../components/home/Photography.vue";
 
 export default {
     name: "Home",
@@ -29,8 +30,16 @@ export default {
         Work,
         Contact,
         Testimonial,
-        Blog,
-        Photography,
+        Blog
+    },
+
+    mounted() {
+        if (process.browser) {
+            window.addEventListener("hashchange", function() {
+                var current = window.location.hash;
+                console.log("hash changed to "+current);
+            });
+        }
     },
 
     async asyncData() {
@@ -40,8 +49,11 @@ export default {
 
             /**Dribble Related API**/
             const { data } = await axios.get(
-                "https://api.dribbble.com/v2/user/shots?page=1&per_page=15", {
-                    headers: { Authorization: `Bearer ${process.env.dribbbleToken}` }
+                "https://api.dribbble.com/v2/user/shots?page=1&per_page=15",
+                {
+                    headers: {
+                        Authorization: `Bearer ${process.env.dribbbleToken}`
+                    }
                 }
             );
             const excludedShots = [
@@ -49,7 +61,7 @@ export default {
                 3882608,
                 3663209,
                 3489448,
-                10506882,
+                10506882
             ];
 
             const filteredShots = data.filter(
@@ -57,24 +69,28 @@ export default {
             );
             const dribbbleShots = filteredShots.slice(0, 9);
 
-            await axios.get(
-                "https://api.github.com/users/kebearry/repos"
-            ).then(response => (myRepositories = response.data))
+            await axios
+                .get("https://api.github.com/users/kebearry/repos")
+                .then(response => (myRepositories = response.data));
 
-            await axios.get("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kebearry", {
-                    params: {
-                        t: Math.round(+new Date() / 1000)
+            await axios
+                .get(
+                    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kebearry",
+                    {
+                        params: {
+                            t: Math.round(+new Date() / 1000)
+                        }
                     }
-                })
+                )
                 .then(response => response.data)
                 .then(data => {
-                    myBlogPosts = data.items //This is an array with the content. No feed, no info about author etc..
-                })
+                    myBlogPosts = data.items; //This is an array with the content. No feed, no info about author etc..
+                });
 
             return { dribbbleShots, myRepositories, myBlogPosts };
         } catch (err) {
-            return { dribbbleShots: [], myRepositories: [], myBlogPosts:[] };
+            return { dribbbleShots: [], myRepositories: [], myBlogPosts: [] };
         }
-    },
+    }
 };
 </script>
