@@ -80,7 +80,6 @@ export default {
                 var sections = document.getElementsByTagName("section");
                 for (let i = 0; i < sections.length; i++) {
                     if (this.elementInViewport(sections[i])) {
-                        window.location.hash = "#" + sections[i].id;
                         document
                             .querySelectorAll(".nav-link")
                             [i].classList.add("active");
