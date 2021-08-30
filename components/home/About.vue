@@ -177,29 +177,29 @@ export default {
 
     // Adjust size and animation steps to number of characters present
     .lead-text {
-        position: relative;
-        width: 30ch;
-        overflow: hidden;
         color: $pink;
-        font-weight: 500;
-        font-size: 1.2rem;
         @media only screen and (min-width: 640px) {
+            position: relative;
+            width: 30ch;
+            overflow: hidden;
+            font-weight: 500;
+            font-size: 1.2rem;
             font-size: 1.5rem;
-        }
-        white-space: nowrap;
-        animation: reveal 3s steps(30, end);
-        margin: 0 auto;
-        padding-bottom: 8px;
+            white-space: nowrap;
+            animation: reveal 3s steps(30, end);
+            margin: 0 auto;
+            padding-bottom: 8px;
 
-        &::after {
-            position: absolute;
-            top: 0;
-            right: 0;
-            content: "";
-            width: 2px;
-            height: 100%;
-            background-color: $pink;
-            animation: blink 0.6s infinite;
+            &::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: "";
+                width: 2px;
+                height: 100%;
+                background-color: $pink;
+                animation: blink 0.6s infinite;
+            }
         }
     }
 }

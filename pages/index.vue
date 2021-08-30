@@ -42,6 +42,25 @@ export default {
     methods: {
         handleAnimation: function(anim) {
             this.anim = anim;
+        },
+        elementInViewport: function(el) {
+            var top = el.offsetTop;
+            var left = el.offsetLeft;
+            var width = el.offsetWidth;
+            var height = el.offsetHeight;
+
+            while (el.offsetParent) {
+                el = el.offsetParent;
+                top += el.offsetTop;
+                left += el.offsetLeft;
+            }
+
+            return (
+                top < window.pageYOffset + window.innerHeight &&
+                left < window.pageXOffset + window.innerWidth &&
+                top + height > window.pageYOffset &&
+                left + width > window.pageXOffset
+            );
         }
     },
 
@@ -56,7 +75,21 @@ export default {
         if (process.browser) {
             window.addEventListener("hashchange", function() {
                 var current = window.location.hash;
-                console.log("hash changed to " + current);
+            });
+            window.addEventListener("scroll", () => {
+                var sections = document.getElementsByTagName("section");
+                for (let i = 0; i < sections.length; i++) {
+                    if (this.elementInViewport(sections[i])) {
+                        window.location.hash = "#" + sections[i].id;
+                        document
+                            .querySelectorAll(".nav-link")
+                            [i].classList.add("active");
+                    } else {
+                        document
+                            .querySelectorAll(".nav-link")
+                            [i].classList.remove("active");
+                    }
+                }
             });
         }
     },
