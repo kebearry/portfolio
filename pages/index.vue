@@ -83,7 +83,8 @@ export default {
                 3882608,
                 3663209,
                 3489448,
-                10506882
+                10506882,
+                12059638
             ];
 
             const filteredShots = data.filter(
@@ -91,10 +92,20 @@ export default {
             );
             const dribbbleShots = filteredShots.slice(0, 9);
 
+            /**Github Related API**/
+
+            const excludedRepos = [230878700, 148982518];
+
             await axios
                 .get("https://api.github.com/users/kebearry/repos")
-                .then(response => (myRepositories = response.data));
+                .then(
+                    response =>
+                        (myRepositories = response.data.filter(
+                            repo => !excludedRepos.includes(repo.id)
+                        ))
+                );
 
+            /**Blogpost Related API**/
             await axios
                 .get(
                     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@kebearry",
@@ -106,7 +117,7 @@ export default {
                 )
                 .then(response => response.data)
                 .then(data => {
-                    myBlogPosts = data.items; //This is an array with the content. No feed, no info about author etc..
+                    myBlogPosts = data.items.slice(0, 9); //This is an array with the content. No feed, no info about author etc..
                 });
 
             return { dribbbleShots, myRepositories, myBlogPosts };
