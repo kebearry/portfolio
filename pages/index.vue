@@ -6,7 +6,6 @@
             :options="lottieOptions"
             v-on:animCreated="handleAnimation"
         />
-        <hero></hero>
         <about></about>
         <work
             :dribbbleShots="dribbbleShots"
@@ -20,7 +19,6 @@
 
 <script>
 import axios from "axios";
-import Hero from "../components/home/Hero.vue";
 import About from "../components/home/About.vue";
 import Work from "../components/home/Work.vue";
 import Contact from "../components/home/Contact.vue";
@@ -33,7 +31,6 @@ export default {
     name: "Home",
 
     components: {
-        Hero,
         About,
         Work,
         Contact,
